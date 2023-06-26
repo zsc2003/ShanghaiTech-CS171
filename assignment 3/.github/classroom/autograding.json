@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Feasibility",
+      "setup": "pip3 install -r test/requirement.txt && mkdir build && cd build && cmake .. -DTESTBYGITHUB=ON && make && ./CS171-Hw3-main && cd .. && cp submit.png ./test",
+      "run": "cd ./test && python3 similiar.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 100
+    }
+  ]
+}
